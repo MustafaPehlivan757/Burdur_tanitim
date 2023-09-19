@@ -1,0 +1,391 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#main {
+  padding-right: 180px;
+  padding-left: 180px;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(38, 38, 38, 0.6)),
+    url(resimler/maxresdefault.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+.logo {
+  width: 80px;
+  position: relative;
+  top: 4%;
+  left: 1%;
+  display: flex;
+}
+.logo img {
+  width: 120px;
+  position: relative;
+}
+.logo p {
+  color: rgba(255, 255, 255, 0.732);
+
+  position: absolute;
+  left: 140px;
+  width: 10px;
+  font-size: 30px;
+  text-shadow: 2px 1px 7px rgba(0, 0, 0, 0.8);
+}
+.main-text {
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding-top: 110px;
+}
+.main-text h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 87px;
+  color: rgba(146, 227, 227, 0.8);
+  margin-bottom: 40px;
+  text-shadow: 2px 1px 7px rgba(0, 0, 0, 0.8);
+}
+.main-text p {
+  font-size: 20px;
+  font-style: italic;
+  text-shadow: 2px 1px 7px rgba(0, 0, 0, 0.8);
+}
+.main-btn {
+  margin: 70px auto 0;
+}
+.main-btn a {
+  width: 150px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 10px;
+  padding: 12px 4px;
+  color: white;
+  border: 0.5px solid white;
+  position: relative;
+  z-index: 1;
+  transition: 0.5s;
+}
+.main-btn a span {
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+  z-index: -1;
+  transition: 0.3s;
+}
+.main-btn a:hover span {
+  width: 100%;
+}
+.main-btn a:hover {
+  color: black;
+}
+#sideBar {
+  width: 240px;
+  height: 100vh;
+  position: fixed;
+  right: -250px;
+  top: 0;
+  background-color: rgba(161, 161, 161, 0.8);
+  z-index: 2;
+  transition: 0.4s;
+}
+nav ul li {
+  list-style: none;
+  margin: 50px 20px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+#hmbBtn {
+  background-color: rgba(161, 161, 161, 0.45);
+  position: fixed;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+
+  top: 40px;
+  right: 40px;
+  z-index: 3;
+  width: 50px;
+  height: 50px;
+}
+#menu {
+  width: 50px;
+}
+#tarih {
+  width: 100%;
+  padding: 20px 0;
+  padding-right: 180px;
+  padding-left: 80px;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(38, 38, 38, 0.6)),
+    url(resimler/flamingos-im-wasser-f-142373214-jpg--68316-.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 120vh;
+}
+
+.bslk {
+  text-align: center;
+  font-size: 60px;
+  margin-bottom: 60px;
+  color: rgba(205, 178, 184, 0.8);
+  text-shadow: 10rcap;
+}
+.tarih-content {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+}
+
+.tcontent {
+  text-align: left;
+  float: left;
+  flex-basis: 50%;
+}
+.tcontent h1 {
+  color: rgba(236, 217, 221, 0.6);
+  font-size: 50px;
+  margin-bottom: 20px;
+  text-shadow: 2px 1px 7px rgba(33, 32, 32, 0.8);
+}
+.tcontent p {
+  text-shadow: 2px 1px 7px rgba(0, 0, 0, 0.8);
+  line-height: 25px;
+  color: white;
+  font-size: 16px;
+}
+.timage {
+  flex-basis: 50%;
+  margin: auto;
+  float: right;
+}
+.timage img {
+  width: 60%;
+  border-radius: 10px;
+  margin-left: 20%;
+}
+#turistik {
+  padding-right: 5%;
+  padding-left: 4%x;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(38, 38, 38, 0.6)),
+    url(resimler/925bb4697b201811c3b11fd43e455442.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 150vh;
+}
+.box-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 300px 300px 300px;
+
+  gap: 16px;
+}
+.container {
+  padding: 15px 2%;
+  max-height: 100vh;
+  width: 100%;
+}
+.container .heading {
+  color: rgb(168, 168, 168);
+  text-align: center;
+  font-size: 60px;
+  text-shadow: 2px 1px 7px rgba(0, 0, 0, 0.8);
+  padding: 20px 0 60px 0;
+}
+.box {
+  align-items: center;
+
+  position: relative;
+}
+.box p {
+  margin-left: 66px;
+  bottom: 10px;
+  position: absolute;
+
+  text-align: center;
+  font-size: 30px;
+  color: rgba(255, 255, 255, 1);
+  vertical-align: bottom;
+  text-shadow: 8px 8px 25px rgba(0, 0, 0, 1);
+}
+
+.box img {
+  opacity: 0.8;
+  width: 400px;
+  height: 300px;
+  border-radius: 20px;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(38, 38, 38, 0.6));
+  cursor: pointer;
+  transition: 0.4s;
+  position: absolute;
+}
+.box img:hover {
+  opacity: 1;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#yemekSayfasi {
+  padding-right: 7%;
+  padding-left: 4%x;
+
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(38, 38, 38, 0.6)),
+    url(resimler/Turkish-Food.webp);
+  background-size: cover;
+  background-position: center;
+  background-size: cover;
+  background-position: center;
+  padding-top: 40px;
+  height: 200vh;
+}
+#yemekSayfasi h1 {
+  text-align: center;
+  font-size: 60px;
+  margin-bottom: 30px;
+  color: #f09027;
+  text-shadow: 10rcap;
+}
+.container-yemek {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto auto;
+  width: 100%;
+
+  gap: 16px;
+}
+.yemekler {
+  border-radius: 20px;
+  width: 400px;
+  height: 300px;
+  place-self: center;
+  margin-top: 20px;
+  position: relative;
+}
+.yemekler img {
+  border-radius: 20px;
+  width: 400px;
+  height: 300px;
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center;
+}
+.yemekler .isimler {
+  position: absolute;
+  inset: 0;
+  font-size: 1.6rem;
+  padding: 1rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 11px 7px 15px rgba(0, 0, 0, 1);
+}
+.yemekler img,
+.yemekler .isimler {
+  bottom: 0;
+  transition: 200ms ease-in-out;
+}
+.yemekler:hover img.blur {
+  filter: blur(5px);
+}
+.yemekler .isimler.fade {
+  opacity: 0;
+}
+.yemekler:hover .isimler.fade {
+  opacity: 1;
+}
+#footer {
+  color: white;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(38, 38, 38, 0.6)),
+    url(resimler/burdur.jpg);
+  background-size: cover;
+  background-position: center;
+  background-size: cover;
+  background-position: center;
+  padding: 20px 0 20px;
+}
+#footer a,
+#footer h1 {
+  color: white;
+}
+.footer-row {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.title-text h1 {
+  text-align: center;
+  font-size: 60px;
+  margin-bottom: 30px;
+  color: #7f7973;
+  text-shadow: 10rcap;
+}
+.footer-right,
+.footer-left {
+  flex-basis: 45%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.footer-left h1,
+.footer-right h1 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.footer-left P,
+.footer-right {
+  line-height: 30px;
+}
+.footer-right {
+  width: 100px;
+  text-align: right;
+}
+.footer-left a {
+  text-decoration: none;
+}
+.footer-left a:hover {
+  text-decoration: underline;
+}
+.sosyal-medya {
+  margin-right: 5%;
+
+  font-size: 30px;
+  bottom: 5%;
+}
+.sosyal-medya i {
+  margin-right: 6px;
+  transition: 0.4s;
+}
+.sosyal-medya i:hover {
+  transform: translateY(-5px);
+}
+
+@media screen and (max-width: 770px) {
+  .main-text h1 {
+    font-size: 32px;
+    margin-right: 10%;
+  }
+  .main-text p {
+    display: none;
+  }
+  .main-btn a {
+    display: block;
+    margin: 14px auto;
+  }
+  .logo {
+    width: 60px;
+  }
+  #main {
+    padding-left: 100px;
+  }
+}
